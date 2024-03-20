@@ -21,16 +21,17 @@ public class MODUL1_202357201015 {
         
         for(int baris= 0; baris <data.length; baris++){
             for(int kolom= 0; kolom <data[baris].length; kolom++){
-                System.out.print(data[baris][kolom] + " ");
-                total += data[baris][kolom];
-                jumlahElemen++;
+                if(kolom % 2==1){
+                    System.out.print(data[baris][kolom] + " ");
+                    total += data[baris][kolom];
+                    jumlahElemen++;
+                }
             }
-            System.out.print("\n");
+            System.out.print("\n");                         
         }
         double rerata = total/jumlahElemen;
         System.out.println("Total = " + total);
-        System.out.println("Rerata = " + rerata);
-        
+        System.out.println("Rerata = " + rerata);              
     }
     
 }
