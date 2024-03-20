@@ -18,8 +18,10 @@ public class MODUL1_202357201015 {
         int data[][] = {{4,6,4,2,8,4,2,10},{4,6,4,2,8,4,2,10}};
         for(int baris= 0; baris <data.length; baris++){
             for(int kolom= 0; kolom <data[baris].length; kolom++){
-            System.out.print(data[baris][kolom] + " ");
-        }
+                System.out.print(data[baris][kolom] + " ");
+            }
+            System.out.print("\n");
+        }    
     }
     
 }
