@@ -14,20 +14,16 @@ public class nilai_baru {
                 
         int baris = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Baris ke "));
         int kolom = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Kolom ke "));
+        
         int nilai_Baru = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Nilai Baru "));
         data[baris][kolom] = nilai_Baru;
-        
-                            
-        //x : variabel baris
-        //y : variabel kolom
-        System.out.println("array baru");
+
         for(int x =0; x <data.length; x++){
             for(int y =0; y <data[x].length; y++){
                 System.out.print(data[x][y] + " ");
-            }               
-        }
-        
-        
+           }
+            System.out.println("\n");
+        } 
         
     }
     
