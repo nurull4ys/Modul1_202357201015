@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 public class nilai_baru {
     public static void main(String[] args) {
         int data[][] = {{4,6,4,2,8,4,2,10},{4,6,4,2,8,4,2,10}};
-                
+        int total = 0;      
         int baris = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Baris ke "));
         int kolom = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Kolom ke "));
         
@@ -20,11 +20,14 @@ public class nilai_baru {
 
         for(int x =0; x <data.length; x++){
             for(int y =0; y <data[x].length; y++){
+                if(y % 2==1){
                 System.out.print(data[x][y] + " ");
-           }
+                total += data[x][y];
+                }
+            }
             System.out.println("\n");
         } 
-        
+          System.out.println("Total : "+ total);       
     }
     
 }
